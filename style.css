@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray !important;
+  height: 100vh;
+  overflow: hidden;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background: white;
+  padding: 20px;
+  width: 480px;
+  height: 480px;
+}
+.box-header {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.box-squar {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  border: none;
+  background: #f5f574;
+  width: 100%;
+  height: 100%;
+  min-height: calc(480px / 3);
+}
+.box-squar .squar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  cursor: pointer;
+  border: 3px solid black;
+  font-weight: 700;
+  font-size: 30px;
+}
+.box-squar .squar:hover {
+  opacity: 1;
+}
+.box-replay {
+  padding: 5px;
+}
+.box-replay .replay-btn {
+  transition: all 0.7s;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 5px 20px;
+  font-size: 20px;
+}
+.box-replay .replay-btn:hover {
+  background: rgb(84, 84, 84);
+  color: #fff;
+}
